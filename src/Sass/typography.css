@@ -1,0 +1,47 @@
+body, ul, ol {
+  margin: 0;
+  padding: 0 !important;
+  color: black;
+  list-style: none;
+}
+
+.font-strong {
+  color: #C11709;
+}
+
+.primary-font {
+  color: #FD9D3F;
+}
+
+.secondary-font {
+  color: #C11709;
+}
+
+.backround-light {
+  background-color: #E8C7A8;
+}
+
+.background-dark {
+  background-color: #1F130B;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.border-outline-none {
+  border: none;
+  outline: none;
+}
+
+.error-alert {
+  color: red;
+}/*# sourceMappingURL=typography.css.map */

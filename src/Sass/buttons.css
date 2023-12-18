@@ -1,0 +1,73 @@
+.btn-primary {
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  padding: 12px 30px;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background-color: #FD9D3F;
+}
+.btn-primary:hover {
+  cursor: pointer;
+  background: #C11709;
+  transition: all 0.5s ease-in-out;
+}
+.btn-primary .btn-icon {
+  margin-right: 15px;
+}
+
+.btn-large {
+  font-size: 24px;
+  padding: 15px 32px;
+}
+
+.square-btn {
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  font-size: 13px;
+  padding: 9px 16px;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background-color: #FD9D3F;
+  border-radius: 5px !important;
+  text-decoration: none;
+  position: relative;
+}
+.square-btn:hover {
+  background: #C11709;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.square-btn:hover a {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+.square-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.submit-btn {
+  width: 100%;
+  background: #FD9D3F;
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #FD9D3F;
+  transition: all 0.5s ease-in-out;
+}
+.submit-btn:hover {
+  background: #C11709;
+  border: 1px solid #C11709;
+  color: #fff;
+}/*# sourceMappingURL=buttons.css.map */

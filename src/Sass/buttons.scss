@@ -1,0 +1,115 @@
+@import 'variables';
+
+.btn-primary{
+        font-weight: 600;
+        border: none;
+        border-radius: 50px;
+        font-size: 20px;
+        padding: 12px 30px;
+        color: #ffffff;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        background-color: $primary-color;
+        &:hover{
+            cursor: pointer;
+            background: $secondary-color;
+            transition: all 0.5s ease-in-out;
+
+
+        }
+        .btn-icon{
+            margin-right:15px;
+        }
+}
+.btn-large {
+    font-size: 24px;
+    padding: 15px 32px;
+}
+.square-btn {
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    font-size: 13px;
+    padding: 9px 16px;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background-color: $primary-color;
+    border-radius: 5px !important;
+    text-decoration: none;
+    position: relative;
+  
+    &:hover {
+      background: $secondary-color;
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+  
+      a {
+        transform: scale(1.1);
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  
+
+.submit-btn{
+    width: 100%;
+    background: $primary-color;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid $primary-color;
+    transition: all 0.5s ease-in-out;
+
+    &:hover{
+        background: $secondary-color;
+        border: 1px solid $secondary-color;
+        color: #fff;
+    }
+}
+
+.sign-up-btn {
+  padding: 5px 0;
+  font-size: 18px;
+}
+.read-more-btn,
+.load-more-btn,
+.add-to-cart {
+  padding: 5px 20px ;
+  cursor: pointer;
+  color: white; 
+  background-color: $secondary-color;
+  text-decoration: none;
+  border: none;
+  border-radius: 3px;
+}
+
+.load-more-btn{
+  margin-bottom: 20px;
+}
+.add-to-cart{
+  margin-left: 20px;
+}
+
+.quantity-button{
+  border: none;
+    outline: none;
+    background-color: white;
+    font-size: 22px;
+}
+.slick-prev:before,
+.slick-next:before{
+  font-size: 28px !important;
+  color: $secondary-color !important;
+}

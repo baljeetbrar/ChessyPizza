@@ -1,0 +1,29 @@
+/* CSS for small screens (e.g., mobile phones) */
+@media screen and (max-width: 767px) {
+  .navbar-list-row {
+    padding: 0px;
+  }
+  .order-cart-section {
+    width: 50%;
+  }
+  .site-logo {
+    width: 100px;
+    height: 40px;
+  }
+}
+/* CSS for medium screens (e.g., tablets) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .navbar-list-row {
+    padding: 0px;
+  }
+  .site-logo {
+    width: 100px;
+    height: 40px;
+  }
+  .order-cart-section {
+    width: 50%;
+  }
+}
+/* CSS for large screens (e.g., desktops and laptops) */
+/* CSS for large screens (e.g., desktops and laptops) */
+/* CSS for extra-large screens (e.g., larger desktop monitors) *//*# sourceMappingURL=responsive.css.map */

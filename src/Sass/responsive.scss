@@ -1,0 +1,250 @@
+@import 'variables';
+/* CSS for Extra- small screens (e.g., mobile phones) */
+@media screen and (max-width: 576px) {
+    .navbar-list-row{
+        padding: 0px;
+    }
+    .order-cart-section {
+        width: 50%;
+    }
+    .site-logo{
+        width: 100px;
+        height: 40px;
+    }
+     .navbar-wrapper a:not(.signup-login){
+        background: $primary-color !important;
+        padding-left: 30px;
+       
+       &:hover{
+         cursor: pointer;
+            background: $background-dark !important;
+        }
+    }
+    .square-btn{
+        font-size: 10px !important;
+        padding: 0px !important;
+    }
+    .home-banner-title{
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .home-banner-desc{
+        font-size: 17px;
+        line-height: 28px;
+    }
+    .btn-large {
+        font-size: 17px;
+        padding: 15px 32px;
+    }
+    .banner-background {
+        top: -35px;
+    }
+    .privacy-policy-list {
+        font-size: 15px;
+        gap: 0px 24px;
+    }
+    .footer-information{
+        padding: 0px 20px;
+    }
+    .reserveed-right {
+        font-size: 14px;
+    }
+    .contact-form-wrapper h2 {
+        margin: 40px 0;
+    }
+    .contact-adress-section h4 {
+        font-size: 22px;
+    }
+    .contact-page-icon{
+        width: 50px;
+        height: 40px;
+    }
+    .contact-page-icon .icon-svg {
+        font-size: 18px;
+        left: 16px;
+        top: 9px;
+    }
+    .social-icon {
+        gap: 6px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .app-store-buttons-wrapper{
+        flex-flow: column;
+        gap: 7px 0;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .product-item {  
+        img {
+          width: 150px !important;
+          height: 150px !important;
+        }
+        h3{
+          font-size: 15px !important;
+        }
+        .product-description{
+          font-size: 14px !important;
+      }
+    }
+}
+
+/* CSS for small screens (e.g., mobile phones) */
+@media screen and (min-width: 577px) and (max-width: 767px) {
+    .navbar-list-row{
+        padding: 0px;
+    }
+    .order-cart-section {
+        width: 50%;
+    }
+    .site-logo{
+        width: 100px;
+        height: 40px;
+    }
+     .navbar-wrapper a:not(.signup-login){
+        background: $primary-color !important;
+        padding-left: 30px;
+       
+       &:hover{
+         cursor: pointer;
+            background: $background-dark !important;
+        }
+    }
+    .square-btn{
+        font-size: 10px !important;
+        padding: 0px !important;
+    }
+    .home-banner-title{
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .home-banner-desc{
+        font-size: 17px;
+        line-height: 28px;
+    }
+    .btn-large {
+        font-size: 17px;
+        padding: 15px 32px;
+    }
+    .banner-background {
+        top: -35px;
+    }
+    .privacy-policy-list {
+        padding: 10px 5px;
+        gap: 0px 25px;
+    }
+    .reserveed-right {
+        word-spacing: 5px;
+    }
+    .contact-form-wrapper h2 {
+        margin: 40px 0;
+    }
+    .contact-adress-section h4 {
+        font-size: 22px;
+    }
+    .contact-page-icon{
+        width: 50px;
+        height: 40px;
+    }
+    .contact-page-icon .icon-svg {
+        font-size: 18px;
+        left: 16px;
+        top: 9px;
+    }
+    .product-header-list {
+        padding-left: 15px !important;
+    }
+    a.product-list-category.nav-link.active {
+        padding: 8px 11px;
+    }
+
+    
+  }
+  
+  /* CSS for medium screens (e.g., tablets) */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-list-row{
+        padding: 0px;
+    }
+    .nav-link-margin {
+        margin-left: 15px;
+    }
+    .site-logo{
+        width: 100px;
+        height: 40px;
+    }
+    .order-cart-section {
+        width: 50%;
+    }
+    .navbar-wrapper a,
+    .cart-icon{
+        font-size:11px;
+    }
+    .order-cart-section {
+        margin-left: 20px;
+        gap: 0 0px;
+    }
+    .square-btn{
+        font-size: 11px;
+        padding: 2px 9px;
+    }
+    .home-banner-title{
+        font-size: 47px;
+        line-height: 54px;
+    }
+    .home-banner-desc{
+        font-size: 19px;
+        line-height: 30px;
+    }
+
+    .banner-background {
+        top: -48px;
+    }
+    .product-item {  
+        img {
+          width: 180px;
+          height: 180px;
+        }
+        h3{
+          font-size: 17px;
+        }
+        .product-description{
+          font-size: 14px !important;
+      }
+    }
+    
+  }
+  
+  /* CSS for large screens (e.g., desktops and laptops) */
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .home-banner-title{
+        font-size: 60px;
+    }
+    .home-banner-desc{
+        font-size: 22px;
+        padding-bottom: 20px;
+    }
+    .banner-background {
+        top: -66px;
+    }
+    .square-btn{
+        padding: 6px 10px;  
+    }
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .banner-background {
+        top: -80px;
+    }
+  }
+
+   /* CSS for large screens (e.g., desktops and laptops) */
+   @media screen and (min-width: 1201px) and (max-width: 1439px) {
+    
+   }
+
+  /* CSS for extra-large screens (e.g., larger desktop monitors) */
+  @media screen and (min-width: 1440px) {
+   
+  }

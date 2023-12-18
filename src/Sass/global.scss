@@ -1,0 +1,479 @@
+@import 'variables';
+
+//Navbar container Css Start ---------
+.grid-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+.navbar-wrapper{
+    height: 65px;
+   width: 100%;
+   a{
+    color: white;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: orange;
+        transform: scaleX(0);
+        transform-origin: bottom;
+        transition: transform 0.3s ease-in-out;
+    }
+    &:hover{
+        color: white;
+        &:after{
+            transform: scaleX(1);
+        }
+    }
+}
+}
+.order-cart-section{
+    width:45%;
+    color: white;
+    gap: 0px 20px;
+}
+
+.nav-link-margin,
+.dropdown-submenu{
+    margin-left:30px;
+}
+.nav-link{
+    position: relative;
+    text-decoration: none; 
+    &:focus{
+        color: white !important;
+    }
+}
+.dropdown-toggle-menu::after{
+    border: none !important;
+}
+.navbar-toggle-section{
+    background-color: $primary-color !important;
+    .navbar-toggler-icon{
+        filter: invert(1);
+    }
+}
+.arrow {
+    position: absolute;
+    top: 18px;
+    width: 3px;
+    height: 3px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid white;
+    right: -6px;
+}
+.dropdown-submenu-list a{
+    color:black;
+    &:hover{
+        color: black;
+    }
+}
+
+.cart-wrapper {
+    position: relative;
+  }
+  
+  .cart-details {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -55px;
+    background-color: white;
+    z-index: 1;
+    width: 333px;
+    text-align: left;
+    margin-left: 0px;
+    padding-left: 0px;
+    font-size: 13px;
+  }
+  
+  .cart-wrapper:hover .cart-details {
+    display: block;
+  }
+
+//Breadcrumbs--
+.breadcrumbs-wrapper{
+    padding-left: 60px;
+    margin-top: 10px;
+}
+.breadcrumb-links a{
+    color: black !important;
+    & :hover{
+        cursor: pointer;
+
+    }
+}
+
+
+
+//Navbar container Css End ---------
+
+
+
+// Homepage content css Start------------
+
+.home-banner-title{
+    color: black;
+    max-width: 460px;
+    font-size: 64px;
+    line-height: 84px;
+    font-weight: 700;
+    word-spacing: 4px;
+    letter-spacing: 4px;
+    word-break: normal;
+}
+.home-banner-desc{
+    font-size: 24px;
+    line-height: 42px;
+    max-width: 650px;
+    padding-bottom: 50px;
+}
+.home-banner-btn{
+    margin-bottom: 30px;
+}
+.offer-banner-details{
+    margin-bottom: 60px;
+}
+.company-details{
+    background-color: $primary-color;
+    position: relative;
+    padding-bottom: 60px;
+}
+.banner-background{
+    position: absolute;
+    top: -93px;
+    left: 0;
+}
+.food-content-container {
+    img{
+        width: 100px;
+        margin-top: 15px;
+        &:hover{
+            cursor: pointer;
+            filter: invert(1);  
+            transition: all 500ms ease-in-out;
+        }
+    }
+}
+.container-des{
+    padding: 8px 40px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3; /* Number of lines to show */
+    text-overflow: ellipsis;
+}
+.show-more {
+    -webkit-line-clamp: initial;
+  }
+  
+
+// Homepage content css End------------
+
+
+// About Us page CSS Start-------------
+
+.special-pizza-image{
+    border-radius: 10px;
+    &:hover{
+        transform: scale(0.9);
+        transition: all 500ms ease-in-out;
+    }
+}
+.about-us-header{
+    margin: 30px 0;
+}
+.pizza-content-des{
+    padding: 0 50px;
+}
+.about-us-container {
+    text-align: center;
+  
+    .about-us-row {
+      padding: 40px 0; // Adjust the value as needed
+  
+      &.section-lines {
+        position: relative;
+  
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          border-top: 1px solid rgba(209, 209, 209, 0.5);; // Adjust color and thickness as needed
+        }
+  
+        &::before {
+          top: 0;
+        }
+  
+        &::after {
+          bottom: 0;
+        }
+      }
+    }
+  }
+// About Us page CSS End 
+
+// Contact Us Css Start --------------------------
+.contact-header{
+    margin: 36px 0px;
+    padding: 0 50px;
+    & h1{
+        margin: 15px 0;
+        color: $secondary-color;
+    }
+}
+.contact-information{
+    text-align:left;
+}
+.contact-adress-section{
+    position: relative;
+    padding: 10px 40px;
+    & h4{
+    color: $secondary-color;
+    }
+    & a{
+        text-decoration: none;
+        color: black;
+    }
+
+}
+.contact-page-icon{
+    position: absolute;
+    left: -40px;
+    background-color: $primary-low-opactiy;
+    width: 70px;
+    height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    vertical-align: middle;
+    
+    .icon-svg{
+        color: $secondary-color;
+        font-size: 30px;
+        position: absolute;
+        left: 20px;
+        top: 10px;
+    }
+}
+
+// Contact Us Css End --------------------------
+
+
+// Signup/Login page Css start ----------------
+.user-welcome{
+    margin: 60px 0 !important;
+    width: 100%; 
+} 
+.user-details-header{
+    padding-bottom: 30px;;
+}
+.back-to-login{
+    text-decoration: none;
+}
+// Signup/Login page Css End ----------------
+
+// Footer Css Start --------------------------
+.footer-banner{
+    height: 160px;
+    margin: 50px 0;
+}
+.footer-list{
+    gap:10px
+}
+.privacy-policy-list{
+    padding: 10px 10px !important;
+}
+.reserveed-right{
+    word-spacing: 8px;
+    letter-spacing: 1px;
+}
+.app-store-buttons-wrapper {
+    margin: 7px 0px;
+    gap: 0 14px;
+  }
+  
+  .app-store-button,
+  .google-play-button {
+    display: inline-block;
+    width: 115px; /* Adjust the width as needed */
+    height: 34px; /* Adjust the height as needed */
+    background-image: url('https://i.ibb.co/7N3hDnp/imgbin-app-store-google-play-apple-apple-google-play-and-app-store-logos-jd-SLa-LPr3-GTz-TLHKy06i2-S.jpg');
+    background-repeat: no-repeat;
+    text-indent: -9999px; /* Hide the text content */
+    cursor: pointer;
+    background-size: 150px;
+  }
+  
+  .google-play-button {
+    background-position: -17px -8px;; /* Adjust the position for the Google Play button */
+  }
+  
+  .app-store-button {
+    background-position: -17px -51px; /* Adjust the position for the App Store button */
+  }
+  
+  .app-store-button:hover,
+  .google-play-button:hover {
+    opacity: 0.8;
+  }
+  
+
+.social-icon{
+    gap: 20px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    .social-icon-svg{
+        color: $secondary-color;
+        &:hover{
+            cursor: pointer;
+            transform:scale(1.2);
+
+        }
+    }
+}
+
+// Footer Css End ----------------------------
+
+
+
+
+/*======================
+    404 page
+=======================*/
+.error-page{
+    margin-bottom: 60px;
+}
+.error-page-wrapper{
+    margin: 0 auto;
+}
+.error-image img{
+    margin: -80px 0;
+}
+.error-des{
+    margin-top: -40px;
+    & h1{
+        font-size: 80px;
+    }
+    & p{
+        font-size: 24px;
+    }
+}
+.error-page-btn{
+    padding: 9px 50px !important;
+}
+.separator{
+    padding: 0 10px;
+}
+			 
+// Product Display - Product Filter Css Start
+.product-header-list {
+    background: $background-dark;
+    margin: 20px 0;
+    border-radius: 20px;
+    padding-left: 25px !important;
+  
+    a {
+      color: white;
+  
+      &:hover {
+        color: $primary-color;
+      }
+  
+    }
+  }
+  a.product-list-category.nav-link.active {
+      background: $primary-color;
+      border: none;
+      color: white;
+      outline: none
+  }
+  .nav-tabs .nav-link:focus,
+  .nav-tabs .nav-link:hover {
+      isolation: isolate;
+      border-color: $primary-color !important;
+  }
+  .product-filters{
+    gap: 30px;
+    margin: 10px 0;
+  }
+
+  .filter-price-range{
+    width: 180px;
+  }
+  
+  .product-list {
+    margin-top: 20px;
+  
+    .product-item {
+      padding: 15px;
+      margin-bottom: 20px;
+  
+      img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 10px;
+      }
+      h3{
+        font-size: 20px;
+      }
+      .product-description{
+        word-break: break-word;
+        word-wrap: normal;
+        letter-spacing: 0.5px;
+        font-size: 16px;
+    }
+    }
+  }
+  .related-product{
+    text-decoration: none;
+    color: $secondary-color;
+    border: none;
+    outline: none;
+  }
+ 
+  .add-to-cart-icon{
+      margin-left: 30px;
+      font-size: 20px;
+  }
+  .product-details-path{
+    text-decoration: none;
+    color: black;
+  }
+  .selected-product-image {
+    width: 300px;
+}
+.related-product-wrapper{
+    padding: 40px 0;
+}
+  // Product Display - Product Filter Css End
+
+
+
+  // Product Details - Product Details Css Start
+.selected-product-details{
+    padding: 30px 0;
+    & h2{
+        margin-bottom: 40px;
+    }
+}
+.related-product-image{
+    width: 200px;
+}
+
+  // Product Details - Product Details Css End
+
+
+  //User Cart --- User Cart Css Start
+.quantity-value{
+    margin: 0 8px;
+}
+
+  //User Cart --- User Cart Css End

@@ -1,0 +1,65 @@
+@import 'variables';
+
+.contact-form-wrapper {
+  background-color: #fff;
+  padding: 0 40px 40px;
+  width: 100%;
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: $secondary-color;
+  }
+}
+.input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+
+    input, textarea {
+      width: 100%;
+      padding: 5px 0;
+      font-size: 16px;
+      margin: 10px 0;
+      border: none;
+      border-bottom: 2px solid #333;
+      outline: none;
+      resize: none;
+    }
+
+    span {
+      position: absolute;
+      left: 0;
+      padding: 5px 0;
+      font-size: 16px;
+      margin: 10px 0;
+      pointer-events: none;
+      transition: 0.5s;
+      color: #666;
+    }
+    .eye-icon{
+      position: absolute;
+    right: 7px;
+    border: none;
+    outline: 0;
+    background: $primary-color;
+    color: black;
+    padding: 4px 10px;
+    font-size: 20px;
+    }
+    input:focus ~ span,
+    textarea:focus ~ span,
+    input:valid ~ span,
+    textarea:valid ~ span {
+      color: $secondary-color;
+      font-size: 12px;
+      transform: translateY(-20px);
+    }
+
+    .userEmail:focus ~ span,
+    .userEmail:valid ~ span{
+      transform: translateY(-20px) !important;
+    }
+ 
+  }
+
